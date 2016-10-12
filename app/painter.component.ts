@@ -97,7 +97,8 @@ export class PainterComponent implements OnInit {
         this.colorTemplate = this.colorCode.getColoredField();
     }
 
-    setActive(active: boolean): void {
+    setActive(event: Event, active: boolean): void {
         this.isActive = active;
+        event.preventDefault();
     }
  }

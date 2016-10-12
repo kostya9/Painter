@@ -5,8 +5,8 @@
     </div>
     <button (click)="clearField()" title="Clear" class="btn-clear">Clear</button>
 </div>
-<div class="field" (mousedown)="setActive(true)" (mouseup)="setActive(false)">
-    <table class="field-table">
+<div class="field">
+    <table class="field-table" (mousedown)="setActive($event, true)" (mouseup)="setActive($event, false)">
         <tr *ngFor="let r of getArrayBySize(fieldSize)">
             <td *ngFor="let c of getArrayBySize(fieldSize)" (mouseover)="setColorByColumnRowIfActive(c, r)" (click)="setColorByColumnRow(c, r)" class="field-table-cell-outer">
                 <div [style.background-color]="colorTemplate[r * fieldSize + c]" class="field-table-cell" draggable="false"></div>

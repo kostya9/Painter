@@ -20,17 +20,9 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
-                // Prevents dragging and clicking ryght click
-        document.addEventListener("mousedown", function(e) {
-            e.preventDefault();
-        }, true);
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-        }, true);
         System.import('app').catch(function(err) {
             console.error(err);
         });
-
     </script>
 </head>
 
