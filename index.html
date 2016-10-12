@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <base href="/">
+    <title>
+        Hi!
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link type="stylesheey" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js">
+    </script>
+    <script src="node_modules/core-js/client/shim.min.js">
+    </script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+                // Prevents dragging and clicking ryght click
+        document.addEventListener("mousedown", function(e) {
+            e.preventDefault();
+        }, true);
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        }, true);
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
+
+    </script>
+</head>
+
+<body>
+    <my-app>Loading...</my-app>
+</body>
+
+</html>

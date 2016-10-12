@@ -1,0 +1,58 @@
+.inner-color {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.outer-color {
+    display: block;
+    float: left;
+    background-color: white;
+    border: 5px gray solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1px;
+}
+
+.btn-clear {
+    margin-left: 50px;
+}
+
+.colors {
+    height: 600px;
+    width: 200px;
+    float: left;
+}
+
+.field {
+    float: left;
+    margin-left: 100px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.field-table-cell {
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.field-table-cell-outer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer-color:hover {
+    border-color: darkgoldenrod;
+}
+
+.clicked {
+    border-color: crimson;
+}
+
+table {
+    margin: 0px;
+    padding: 0px;
+}
